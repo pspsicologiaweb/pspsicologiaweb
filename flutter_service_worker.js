@@ -5,14 +5,14 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "assets/Amatic.ttf": "8ba765ce9580a3bdae76b59130d0ef8a",
 "assets/articulo.jpg": "74082f1a8383865b96b92856d98c4c3c",
-"assets/AssetManifest.json": "92672a3355f25999c267fa5b7434429c",
+"assets/AssetManifest.json": "979d32b952f30a8adb102afc3c040317",
 "assets/assets/Amatic.ttf": "8ba765ce9580a3bdae76b59130d0ef8a",
 "assets/assets/articulo.jpg": "74082f1a8383865b96b92856d98c4c3c",
 "assets/assets/cara.png": "3ae6a97845b13d33349712c720c43acb",
-"assets/assets/doctoralia.html": "36e16b8e78d4d86ff31326a0c7b4d040",
+"assets/assets/doctoralia.html": "2a5fc0467988083842e81ef4a5b46ed0",
 "assets/assets/doctoralia.png": "176503071fbe20c63fde9a63f8f50c6a",
 "assets/assets/doctoralia2.png": "47a8421930f4d5a26a391e56c10820b8",
-"assets/assets/doctoralia_mov.html": "e8a44286f0f2b7448544c0d100120702",
+"assets/assets/doctoralia_mov.html": "71c955210884eae3642623f641a177d0",
 "assets/assets/facebook.png": "ad973f532bbed9c4986822a4b5d64714",
 "assets/assets/facebook2.png": "ac42b1914a1af5b06df5704d3851cb20",
 "assets/assets/familiar.png": "f8d0026565e60f30522a040e4aad9fba",
@@ -56,6 +56,7 @@ const RESOURCES = {
 "assets/assets/recurso6.jpg": "8005d8e9fed5aad9244b37e2317ce3f6",
 "assets/assets/recurso7.jpg": "8ef966110afdc0db6b218038c21eaa0a",
 "assets/assets/rejas.png": "850080730795402503bacb50ae2ee7a9",
+"assets/assets/saludmadrid.png": "744fb7bace15ef9af96961796efd04ba",
 "assets/assets/sanitarios.png": "cdcd4337143d0fea6d88473c2b3882b9",
 "assets/assets/sesiones.png": "2b8af06559f088e83c73fae12154f26b",
 "assets/assets/supervision.jpg": "7d94e01884918cd3bf576de5efdda93a",
@@ -82,7 +83,7 @@ const RESOURCES = {
 "assets/facebook.png": "ad973f532bbed9c4986822a4b5d64714",
 "assets/facebook2.png": "ac42b1914a1af5b06df5704d3851cb20",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/Hoja.png": "a82cba691e9cf1393c1efc24f6ce8cc0",
 "assets/Hoyo.PNG": "5e1ecec975749a1f50ec1aefc4e12081",
 "assets/instagram.png": "3df131aeffdb13b58b3c41ddd4281249",
@@ -96,7 +97,7 @@ const RESOURCES = {
 "assets/logo.png": "3b5c0fc4223d1c27d47d5471db1aed9f",
 "assets/Mano.png": "3c4034aed3577f586856e8936afd9e61",
 "assets/ninos.png": "d30dd99325df751c6d87b18cfee52934",
-"assets/NOTICES": "293d47b6f9d9ab688b507b47fa6a0fd0",
+"assets/NOTICES": "3dd76028d0d00af912806f728a915e4c",
 "assets/Ola.jpg": "f0880328a1ec141232c02d7b7e98e6bf",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/patri.png": "971fe175f90aa4f56c655b04394e0156",
@@ -125,14 +126,18 @@ const RESOURCES = {
 "assets/whatsapp.png": "3ffdd6106ddeddba9214d399879b0d08",
 "assets/whatsapp2.png": "c60c77e33cee8b54edbc5aee80bda39a",
 "assets/whatsapp3.png": "564acb039c7b28fe9da12bb2bdfb7a74",
+"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
+"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
+"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
+"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "e8a45c62b94e172652c11894bc03417e",
-"/": "e8a45c62b94e172652c11894bc03417e",
-"main.dart.js": "6e3a0e634818fa2389dc5b575a9663cd",
+"index.html": "369bed9b9eb3f1c2a025237b27b5797b",
+"/": "369bed9b9eb3f1c2a025237b27b5797b",
+"main.dart.js": "30ef0146236f57d5122b978116678a0c",
 "manifest.json": "95c9039bbfe33afa1588bfc299a97f24",
-"version.json": "4c32bec2c6c02c2ccef5d8aaba289ff5"
+"version.json": "f497bb3b2c99e5a5950f064d9e3fd7e3"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -150,7 +155,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
